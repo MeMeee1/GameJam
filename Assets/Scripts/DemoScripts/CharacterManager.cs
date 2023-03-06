@@ -7,7 +7,7 @@ using UnityEngine.Events;
 
 public class CharacterManager : MonoBehaviour
 {
-    [SerializeField] List<CharacterScriptableObject> charObjects;
+    [SerializeField] List<CharacterSO> charObjects;
      [SerializeField] TextMeshProUGUI charDescription;
      [SerializeField] TextMeshProUGUI charName;
      [SerializeField] TextMeshProUGUI charSpeed;
