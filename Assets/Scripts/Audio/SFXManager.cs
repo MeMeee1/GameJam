@@ -6,7 +6,7 @@ public class SFXManager : MonoBehaviour
 {
     public static SFXManager instance;
     public AudioSource sfxSource;
-    public AudioClip sfxClip;
+    
 
     private void Awake()
     {
@@ -14,12 +14,12 @@ public class SFXManager : MonoBehaviour
         {
             instance = this;
             DontDestroyOnLoad(gameObject);
-            sfxSource.clip = sfxClip;
+            
         }
         
     }
 
-    public void PlaySFX()
+    public void PlaySFX(AudioClip sfxClip)
     {
         sfxSource.PlayOneShot(sfxClip);
     }
