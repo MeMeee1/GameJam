@@ -6,7 +6,7 @@ using DG.Tweening;
 public class ButtonAnim : MonoBehaviour
 {
     Sequence sequence;
-    void Start()
+    public void StartAnimation()
     {
         sequence =DOTween.Sequence();
         sequence
