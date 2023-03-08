@@ -9,11 +9,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1c342ff21618c748909c93b57524254, type: 3}
-  m_Name: Human
+  m_Script: {fileID: 11500000, guid: a74634706e6f78149851bdfbdf9c61b1, type: 3}
+  m_Name: EnemyManager
   m_EditorClassIdentifier: 
-  enemyName: 
-  enemyHealth: 0
-  enemyPrefab: {fileID: 100000, guid: f9f32fdb4bc7744849a33427aedb8702, type: 3}
-  enemySpeed: 0
-  enemyDamage: 0
+  enemyObjects: {fileID: 0}
+  spwanPoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
