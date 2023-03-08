@@ -12,4 +12,9 @@ public class GameStateManager : SingletonScriptableObject<GameStateManager>
     public static CharacterManagerSO CharacterManagerSO{
         get{return Instance.m_characterManager;}
     }
+
+      [SerializeField] LevelManager m_levelManager;
+    public static LevelManager LevelManager{
+        get{return Instance.m_levelManager;}
+    }
 }
