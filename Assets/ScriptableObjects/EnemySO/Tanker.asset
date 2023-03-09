@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c342ff21618c748909c93b57524254, type: 3}
   m_Name: Tanker
   m_EditorClassIdentifier: 
-  enemyName: 
-  enemyHealth: 0
-  enemyPrefab: {fileID: 0}
-  enemySpeed: 0
-  enemyDamage: 0
+  enemyName: Tanker
+  enemyHealth: 50
+  enemyPrefab: {fileID: 8001814190529402803, guid: 680bb50fe26985c4199214ed863fe39d, type: 3}
+  enemySpeed: 45
+  enemyDamage: 35
