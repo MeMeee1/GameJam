@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: GameStateManager
   m_EditorClassIdentifier: 
   m_characterManager: {fileID: 11400000, guid: 65c041efdf9e29a4b902e90ea59ef2db, type: 2}
+  m_levelManager: {fileID: 11400000, guid: 63caf4b9dcc694342927bfc9b271f21a, type: 2}

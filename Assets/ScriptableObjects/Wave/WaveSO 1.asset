@@ -9,11 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1c342ff21618c748909c93b57524254, type: 3}
-  m_Name: Tanker
+  m_Script: {fileID: 11500000, guid: 6a4055448df1a2042806103430853176, type: 3}
+  m_Name: WaveSO 1
   m_EditorClassIdentifier: 
-  enemyName: 
-  enemyHealth: 0
-  enemyPrefab: {fileID: 1994372366435838, guid: 91298ac8f6cd9064181bb5ad6ee5752a, type: 3}
-  enemySpeed: 0
-  enemyDamage: 0
+  _enemytoSpawn:
+  - {fileID: 11400000, guid: 342310616e6d17044a126fbeef2f0a96, type: 2}
+  timer: 5
+  OnSpawnObjects: {fileID: 11400000, guid: 52e91ef401bfd9440b1c1a84e20d9b58, type: 2}
