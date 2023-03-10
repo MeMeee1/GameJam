@@ -9,11 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1c342ff21618c748909c93b57524254, type: 3}
-  m_Name: Soldier
+  m_Script: {fileID: 11500000, guid: 6a4055448df1a2042806103430853176, type: 3}
+  m_Name: WaveSO 1
   m_EditorClassIdentifier: 
-  enemyName: Soldier
-  enemyHealth: 30
-  enemyPrefab: {fileID: 5587873938715010839, guid: d964fb537248d194f80a29fd323a2d05, type: 3}
-  enemySpeed: 35
-  enemyDamage: 25
+  _enemytoSpawn:
+  - {fileID: 11400000, guid: 342310616e6d17044a126fbeef2f0a96, type: 2}
+  timer: 5
+  OnSpawnObjects: {fileID: 11400000, guid: 52e91ef401bfd9440b1c1a84e20d9b58, type: 2}
