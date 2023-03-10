@@ -5,22 +5,23 @@ using UnityEngine;
 public class EnemyController : MonoBehaviour
 {
         public EnemySO enemySO;
-         public GameObject target;
+        GameObject target;
         Rigidbody rb;
          Vector3 movement;
 
     private void Start() 
     {
         rb = GetComponent<Rigidbody>();
+        target = GameObject.FindGameObjectWithTag("Player");
     }
 
     private void Update() 
     {
         Vector3 direction = target.transform.position - transform.position;
-        float angle = Mathf.Atan2(direction.y,direction.x)* Mathf.Rad2Deg;
+        float angle = Mathf.Atan2(direction.y,direction.x) * Mathf.Rad2Deg;
         //rb.rotation = angle;
-        //direction.normalize;
-      //  movement = direction;
+        direction.Normalize();
+       movement = direction;
     }
 
      private void FixedUpdate() 
@@ -35,5 +36,14 @@ public class EnemyController : MonoBehaviour
    public void Attack()
    {
 
+   }
+   
+   public void TakeDamage(float damage)
+   {
+        damage -= enemySO._enemyHealth;
+        if(enemySO._enemyHealth<=0)
+        {
+            Destroy(this.gameObject);
+        }
    }
 }

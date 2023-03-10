@@ -428,7 +428,7 @@ GameObject:
   - component: {fileID: 149794274}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5932,11 +5932,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wave_to_Spawn:
   - enemytoSpawn:
-    - {fileID: 11400000, guid: f15c3827dc1c18947a2768c2dae230d6, type: 2}
+    - {fileID: 11400000, guid: 342310616e6d17044a126fbeef2f0a96, type: 2}
     - {fileID: 11400000, guid: bb538f8f485c44249a19928c4a601476, type: 2}
     timer: 0
     spawnPoints:
-    - {fileID: 0}
+    - {fileID: 2039489095}
     - {fileID: 1406220606}
     - {fileID: 464701786}
     - {fileID: 2039489095}

@@ -15,5 +15,5 @@ MonoBehaviour:
   enemyName: Tanker
   enemyHealth: 50
   enemyPrefab: {fileID: 8001814190529402803, guid: 680bb50fe26985c4199214ed863fe39d, type: 3}
-  enemySpeed: 45
+  enemySpeed: 3
   enemyDamage: 35

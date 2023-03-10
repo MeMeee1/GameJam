@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Ammo : MonoBehaviour
 {
+    public float damageAmount;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,5 +15,14 @@ public class Ammo : MonoBehaviour
     void Update()
     {
         
+    }
+    void OnTriggerEnter(Collider other)
+    {
+        if(other.CompareTag("Enemy"))
+        {
+            Destroy(this.gameObject);
+            EnemyController damage = other.GetComponent<EnemyController>();
+            damage.TakeDamage(damageAmount);
+        }
     }
 }
