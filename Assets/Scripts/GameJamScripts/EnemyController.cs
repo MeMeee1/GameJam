@@ -11,16 +11,16 @@ public class EnemyController : MonoBehaviour
 
     private void Start() 
     {
-        rb = GetComponenet<Rigidbody>();
+        rb = GetComponent<Rigidbody>();
     }
 
     private void Update() 
     {
-        Vector3 direction = target.position - transform.position;
-        float angle = Mathf.Atan2(direction.y,direction.x)* MathF.Rag2Deg;
-        rb.rotation = angle;
-        direction.normalize;
-        movement = direction;
+        Vector3 direction = target.transform.position - transform.position;
+        float angle = Mathf.Atan2(direction.y,direction.x)* Mathf.Rad2Deg;
+        //rb.rotation = angle;
+        //direction.normalize;
+      //  movement = direction;
     }
 
      private void FixedUpdate() 

@@ -9,8 +9,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 26f4fa0983ca4ca418f38cf5f8be9c9d, type: 3}
-  m_Name: GameStateManager
+  m_Script: {fileID: 11500000, guid: a74634706e6f78149851bdfbdf9c61b1, type: 3}
+  m_Name: EnemyManager
   m_EditorClassIdentifier: 
-  m_characterManager: {fileID: 11400000, guid: 65c041efdf9e29a4b902e90ea59ef2db, type: 2}
-  m_levelManager: {fileID: 11400000, guid: 63caf4b9dcc694342927bfc9b271f21a, type: 2}
+  enemyObjects: {fileID: 0}
+  spwanPoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

@@ -12,8 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c342ff21618c748909c93b57524254, type: 3}
   m_Name: Human
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   enemyName: Human
   enemyHealth: 20
   enemyPrefab: {fileID: 4897707846132718537, guid: e94a7075697def640a683ee70fb9e76f, type: 3}
   enemySpeed: 25
   enemyDamage: 15
+=======
+  enemyName: 
+  enemyHealth: 0
+  enemyPrefab: {fileID: 8848426688399750364, guid: cdbfee47e26e912488e3630ac1c93140, type: 3}
+  enemySpeed: 0
+  enemyDamage: 0
+>>>>>>> eb3bca691ff23eded54496cd51629014fd8727a4
