@@ -39,7 +39,7 @@ public class EnemyController : MonoBehaviour
     }
 
 
-   }
+   
    
    public void TakeDamage(float damage)
    {
@@ -48,6 +48,11 @@ public class EnemyController : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+   }
+
+   public void Attack()
+   {
+    
    }
 
 }
