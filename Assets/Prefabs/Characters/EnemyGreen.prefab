@@ -566,6 +566,8 @@ MonoBehaviour:
   enemyObj: {fileID: 11400000, guid: d6d517df368840649802d0b9d2794695, type: 2}
   startingHealth: 1
   currentHealth: 0
+  enemyDeathEvent: {fileID: 11400000, guid: 54bf8ab87f55a11458996f81f924fc9b, type: 2}
+  explosionEffect: {fileID: 1892078723244562, guid: 46876a2780737ec45a19d62f88e5ce56, type: 3}
 --- !u!1 &8549622718210498941
 GameObject:
   m_ObjectHideFlags: 0

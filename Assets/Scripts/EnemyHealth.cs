@@ -8,6 +8,9 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField] EnemySO enemyObj;
     [SerializeField] private int startingHealth; // the starting health of the enemy
     public int currentHealth; // the current health of the enemy
+
+    public GameEvent enemyDeathEvent;
+    public GameObject explosionEffect;
   
     private void Start()
     {
@@ -25,9 +28,11 @@ public class EnemyHealth : MonoBehaviour
        
         if(currentHealth == 0)
         {
-            Destroy(gameObject);
+            GameObject clone = Instantiate(explosionEffect, transform.position, Quaternion.identity);
             enemiesKilled++;
             Debug.Log(enemiesKilled);
+            enemyDeathEvent.Raise();
+             Destroy(gameObject);
         }
     }
 
