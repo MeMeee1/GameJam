@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e1c342ff21618c748909c93b57524254, type: 3}
-  m_Name: Tanker
+  m_Name: EnemyGreen
   m_EditorClassIdentifier: 
   enemyName: 
-  enemyHealth: 0
-  enemyPrefab: {fileID: 0}
-  enemySpeed: 5
-  enemyDamage: 0
+  enemyHealth: 2
+  enemyPrefab: {fileID: 8485802073627638501, guid: 9311dbc0cbe3a314685b4e3a64527176, type: 3}
+  enemySpeed: 2
+  enemyDamage: 1

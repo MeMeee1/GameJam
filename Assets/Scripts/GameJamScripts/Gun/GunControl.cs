@@ -26,6 +26,6 @@ public class GunControl : MonoBehaviour
         bullet.GetComponent<Rigidbody>().velocity = firePoint.forward * bulletSpeed;
         
     
-        // Destroy the enemy game object when the bullet hits it
+        
     }
 }

@@ -15,4 +15,16 @@ public class Ammo : MonoBehaviour
     {
         
     }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            
+            EnemyHealth enemyHealth = collision.gameObject.GetComponent<EnemyHealth>();
+            enemyHealth.TakeDamage(); 
+                Debug.Log("Enemy health: " + enemyHealth.CurrentHealth);// reduce the enemy's health by a certain amount
+    
+        }
+        Destroy(gameObject);
+    }
 }
