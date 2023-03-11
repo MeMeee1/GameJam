@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
 {
+    public static int enemiesKilled = 0;
     [SerializeField] EnemySO enemyObj;
     [SerializeField] private int startingHealth; // the starting health of the enemy
     public int currentHealth; // the current health of the enemy
@@ -28,6 +29,7 @@ public class EnemyHealth : MonoBehaviour
         if(currentHealth == 0)
         {
             Destroy(gameObject);
+            enemiesKilled++;
         }
     }
 

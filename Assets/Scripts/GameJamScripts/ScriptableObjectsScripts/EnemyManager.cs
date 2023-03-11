@@ -11,6 +11,7 @@ public class EnemyManager : MonoBehaviour
     [SerializeField] Wave[] wave_to_Spawn;
     [SerializeField]int currentIndex;
     [SerializeField] IntEvent OnWaveStarted;
+    public static int totalEnemiesSpawned = 0;
     
     private void Update()
     {
@@ -42,7 +43,8 @@ public class EnemyManager : MonoBehaviour
         public int waveIndex;
 
         public bool hasStarted = false;
-
+        //get the enemies health
+        //reduce the health if bullet hits
         public void Update()
         {
             if(timer >= 0)
@@ -70,6 +72,7 @@ public class EnemyManager : MonoBehaviour
         availableSpawnPoints.RemoveAll(x => usedSpawnPoints.Contains(x)); // remove any used spawn points from the available list
         for (int j = 0; j < spawnsToTake; j++)
         {
+            totalEnemiesSpawned++;
             int spawnIndex = Random.Range(0, availableSpawnPoints.Count);
             Transform spawnPoint = availableSpawnPoints[spawnIndex];
             Instantiate(enemytoSpawn[i]._enemyPrefab, spawnPoint.position, Quaternion.identity);

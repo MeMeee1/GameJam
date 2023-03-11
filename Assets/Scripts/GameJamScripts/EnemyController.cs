@@ -39,7 +39,7 @@ public class EnemyController : MonoBehaviour
     }
 
 
-   }
+   
    
    public void TakeDamage(float damage)
    {
