@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Ammo : MonoBehaviour
 {
+    public float damageAmount;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,6 +16,7 @@ public class Ammo : MonoBehaviour
     {
         
     }
+
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Enemy"))
@@ -26,5 +28,6 @@ public class Ammo : MonoBehaviour
     
         }
         Destroy(gameObject);
+
     }
 }

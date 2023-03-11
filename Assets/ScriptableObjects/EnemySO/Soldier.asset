@@ -15,5 +15,5 @@ MonoBehaviour:
   enemyName: Soldier
   enemyHealth: 30
   enemyPrefab: {fileID: 5587873938715010839, guid: d964fb537248d194f80a29fd323a2d05, type: 3}
-  enemySpeed: 35
+  enemySpeed: 3
   enemyDamage: 25
