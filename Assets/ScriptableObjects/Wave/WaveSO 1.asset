@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a4055448df1a2042806103430853176, type: 3}
+  m_Name: WaveSO 1
+  m_EditorClassIdentifier: 
+  _enemytoSpawn:
+  - {fileID: 11400000, guid: 342310616e6d17044a126fbeef2f0a96, type: 2}
+  timer: 5
+  OnSpawnObjects: {fileID: 11400000, guid: 52e91ef401bfd9440b1c1a84e20d9b58, type: 2}
