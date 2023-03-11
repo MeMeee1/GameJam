@@ -16,13 +16,18 @@ public class Ammo : MonoBehaviour
     {
         
     }
-    void OnTriggerEnter(Collider other)
+
+    private void OnCollisionEnter(Collision collision)
     {
-        if(other.CompareTag("Enemy"))
+        if (collision.gameObject.CompareTag("Enemy"))
         {
-            Destroy(this.gameObject);
-            EnemyController damage = other.GetComponent<EnemyController>();
-            damage.TakeDamage(damageAmount);
+            
+            EnemyHealth enemyHealth = collision.gameObject.GetComponent<EnemyHealth>();
+            enemyHealth.TakeDamage(); 
+                Debug.Log("Enemy health: " + enemyHealth.CurrentHealth);// reduce the enemy's health by a certain amount
+    
         }
+        Destroy(gameObject);
+
     }
 }

@@ -11,6 +11,7 @@ public class EnemySO : ScriptableObject
     [Space]
     [SerializeField]float enemySpeed;
     [SerializeField]int enemyDamage;
+    
     public string _enemyName{
         get{return enemyName;}
     }
