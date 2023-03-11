@@ -564,7 +564,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyObj: {fileID: 11400000, guid: d6d517df368840649802d0b9d2794695, type: 2}
-  startingHealth: 0
+  startingHealth: 1
+  currentHealth: 0
 --- !u!1 &8549622718210498941
 GameObject:
   m_ObjectHideFlags: 0

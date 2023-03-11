@@ -149,6 +149,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyObj: {fileID: 11400000, guid: 58600b392028c4444b903ec697dc7f91, type: 2}
   startingHealth: 0
+  currentHealth: 0
 --- !u!1 &526023903470658656
 GameObject:
   m_ObjectHideFlags: 0
@@ -655,6 +656,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2125022889173715017}
     m_Modifications:
+    - target: {fileID: 1583702873802743506, guid: b0ca5ee10582cde4d9f3b2f36fed3d04, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5864248001061481489, guid: b0ca5ee10582cde4d9f3b2f36fed3d04, type: 3}
       propertyPath: m_Name
       value: Canvas

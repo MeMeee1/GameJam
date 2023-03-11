@@ -8,10 +8,7 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField] EnemySO enemyObj;
     [SerializeField] private int startingHealth; // the starting health of the enemy
     public int currentHealth; // the current health of the enemy
-    private void Awake()
-    {
-        startingHealth = enemyObj._enemyHealth;
-    }
+  
     private void Start()
     {
         startingHealth = enemyObj._enemyHealth;
@@ -23,13 +20,14 @@ public class EnemyHealth : MonoBehaviour
 
     public void TakeDamage()
     {
-        currentHealth -= enemyObj._enemyDamage;
+        currentHealth -= 1;
 
        
         if(currentHealth == 0)
         {
             Destroy(gameObject);
             enemiesKilled++;
+            Debug.Log(enemiesKilled);
         }
     }
 

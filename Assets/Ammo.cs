@@ -24,7 +24,7 @@ public class Ammo : MonoBehaviour
             
             EnemyHealth enemyHealth = collision.gameObject.GetComponent<EnemyHealth>();
             enemyHealth.TakeDamage(); 
-                Debug.Log("Enemy health: " + enemyHealth.CurrentHealth);// reduce the enemy's health by a certain amount
+            Debug.Log("Enemy health: " + enemyHealth.CurrentHealth);// reduce the enemy's health by a certain amount
     
         }
         Destroy(gameObject);
