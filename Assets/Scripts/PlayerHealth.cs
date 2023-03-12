@@ -43,7 +43,7 @@ public class PlayerHealth : MonoBehaviour
     private void Die()
     {
         // handle player death here
-        Time.timeScale = 0;
+       
         OnGameLost.Raise();
     }
 }

@@ -2996,7 +2996,7 @@ PrefabInstance:
       objectReference: {fileID: 303943476}
     - target: {fileID: 5744144538642410218, guid: ae19ba6e81da2f747ba20f3b2b5d4d85, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5744144538642410218, guid: ae19ba6e81da2f747ba20f3b2b5d4d85, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -3348,7 +3348,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8640875237356042967, guid: ae19ba6e81da2f747ba20f3b2b5d4d85, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8640875237356042967, guid: ae19ba6e81da2f747ba20f3b2b5d4d85, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -8049,7 +8049,6 @@ MonoBehaviour:
     enemiesSpawned: 0
     hasStarted: 0
   OnWaveStarted: {fileID: 11400000, guid: 7f732685312d5fe49a380c8b4bc58b76, type: 2}
-  OnEnemyHealthDamaged: {fileID: 11400000, guid: 2d2842d5bbe9e614c87b28817b508435, type: 2}
   OnGameWon: {fileID: 11400000, guid: 7e1a75ff1433f0740bb9dc247387d0c5, type: 2}
   allenemdead: 0
 --- !u!1 &2032415250

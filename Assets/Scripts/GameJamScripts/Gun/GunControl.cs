@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.Audio;
 public class GunControl : MonoBehaviour
 {
     [SerializeField]GameObject bulletPrefab;
     [SerializeField]Transform firePoint;
     [SerializeField]float bulletSpeed = 10;
+    
+    [SerializeField]AudioClip sfxClip;
+    [SerializeField]AudioSource sfxSource;
     void Update() {
         if (Input.GetMouseButtonDown(0)) {
             RaycastHit hit;
@@ -27,6 +30,7 @@ public class GunControl : MonoBehaviour
         var bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         // Add collision detection to the bullet
         bullet.GetComponent<Rigidbody>().velocity = firePoint.forward * bulletSpeed;
+        sfxSource.PlayOneShot(sfxClip);
         
     
         
