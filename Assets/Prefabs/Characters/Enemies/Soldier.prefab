@@ -1660,7 +1660,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5587873938715010839}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.7091288, y: 0, z: 1.7460104}
+  m_LocalPosition: {x: -0.7091288, y: -1, z: 1.7460104}
   m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1735,6 +1735,7 @@ MonoBehaviour:
   enemyObj: {fileID: 11400000, guid: 342310616e6d17044a126fbeef2f0a96, type: 2}
   startingHealth: 0
   currentHealth: 0
+<<<<<<< HEAD
   totalNum: 0
   healthBarImage: {fileID: 9198185820827594570}
 --- !u!65 &4963953577395186518
@@ -1899,3 +1900,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+=======
+  enemyDeathEvent: {fileID: 11400000, guid: 54bf8ab87f55a11458996f81f924fc9b, type: 2}
+  explosionEffect: {fileID: 1892078723244562, guid: 46876a2780737ec45a19d62f88e5ce56, type: 3}
+>>>>>>> c164d3e6dd368504e9ec4a12f1cf7d51f868273a

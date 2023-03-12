@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.1727681, g: 0.21589208, b: 0.29782575, a: 1}
+  m_IndirectSpecularColor: {r: 0.17276813, g: 0.21589187, b: 0.29782563, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2457,6 +2457,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3606695632764498838, guid: f88ac0e5a26c0c6449c47d83e5d2ff4d, type: 3}
+      propertyPath: bgMusic
+      value: 
+      objectReference: {fileID: 8300000, guid: 64716c33ceeb05e468579eace8cd86c0, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f88ac0e5a26c0c6449c47d83e5d2ff4d, type: 3}
 --- !u!1 &611158218
@@ -7789,6 +7793,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2026422475}
   - component: {fileID: 2026422476}
+
   m_Layer: 0
   m_Name: EnemyManager
   m_TagString: Untagged
@@ -7826,8 +7831,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wave_to_Spawn:
   - enemytoSpawn:
+<<<<<<< HEAD
     - {fileID: 11400000, guid: 342310616e6d17044a126fbeef2f0a96, type: 2}
+=======
+
+    - {fileID: 11400000, guid: 1c0bba8ee25c5e04a8f61e7430f9f5f2, type: 2}
+>>>>>>> c164d3e6dd368504e9ec4a12f1cf7d51f868273a
     - {fileID: 11400000, guid: f15c3827dc1c18947a2768c2dae230d6, type: 2}
+
     timer: 0
     spawnPoints:
     - {fileID: 2039489095}
@@ -7847,6 +7858,7 @@ MonoBehaviour:
     waveIndex: 0
     enemiesSpawned: 0
     hasStarted: 0
+
   - enemytoSpawn:
     - {fileID: 11400000, guid: d6d517df368840649802d0b9d2794695, type: 2}
     - {fileID: 11400000, guid: 1c0bba8ee25c5e04a8f61e7430f9f5f2, type: 2}
@@ -7890,6 +7902,7 @@ MonoBehaviour:
   OnEnemyHealthDamaged: {fileID: 11400000, guid: 2d2842d5bbe9e614c87b28817b508435, type: 2}
   OnGameWon: {fileID: 11400000, guid: 7e1a75ff1433f0740bb9dc247387d0c5, type: 2}
   allenemdead: 0
+
 --- !u!1 &2032415250
 GameObject:
   m_ObjectHideFlags: 0
@@ -8413,6 +8426,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: Zombie
       objectReference: {fileID: 0}
+
     - target: {fileID: 2826622709208149546, guid: e00742a96f7e22d4194d199441064b75, type: 3}
       propertyPath: healthBarImage
       value: 
@@ -8421,6 +8435,7 @@ PrefabInstance:
       propertyPath: OnPlayerHealthDamage
       value: 
       objectReference: {fileID: 11400000, guid: b253d108f722e4b4ea301c518b9e6ca6, type: 2}
+
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e00742a96f7e22d4194d199441064b75, type: 3}
 --- !u!1001 &6926960781247267132

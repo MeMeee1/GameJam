@@ -24,7 +24,7 @@ public class GunControl : MonoBehaviour
 
     void FireBullet() {
         // Instantiate a bullet game object and set its position and rotation
-        var bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        var bullet = Instantiate(bulletPrefab, firePoint.position, bulletPrefab.transform.rotation);
         // Add collision detection to the bullet
         bullet.GetComponent<Rigidbody>().velocity = firePoint.forward * bulletSpeed;
         

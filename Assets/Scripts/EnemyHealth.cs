@@ -8,6 +8,7 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField] EnemySO enemyObj;
     [SerializeField] private int startingHealth; // the starting health of the enemy
     public int currentHealth; // the current health of the enemy
+
     public static EnemyHealth instance;
     public int totalNum;
     public Image healthBarImage; // reference to the image component
@@ -19,6 +20,7 @@ public class EnemyHealth : MonoBehaviour
             instance = this;
         }
     }
+
 
     private void Start()
     {
@@ -32,7 +34,9 @@ public class EnemyHealth : MonoBehaviour
 
         if (currentHealth == 0)
         {
+
             Destroy(gameObject);
+
         }
 
         // calculate the fill amount based on the current health

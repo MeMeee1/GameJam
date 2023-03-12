@@ -10,11 +10,15 @@ public class EnemyMovement : MonoBehaviour
     Rigidbody rb;
     private bool collidedWithWall = false;
     private bool collidedWithEnemy = false;
+    Animator anim;
     
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+      
+            anim = GetComponent<Animator>();
+           
     }
 
     void FixedUpdate()
@@ -33,8 +37,16 @@ public class EnemyMovement : MonoBehaviour
         if (collision.gameObject.CompareTag("wall") || collision.gameObject.CompareTag("Enemy"))
         {
             collidedWithWall = true;
+<<<<<<< HEAD
             collidedWithEnemy = true;
             
+=======
+            if(anim!=null)
+            {
+                 anim.SetBool("isAttacking",true);
+            }
+           
+>>>>>>> c164d3e6dd368504e9ec4a12f1cf7d51f868273a
             PlayerHealth playerHealth = collision.gameObject.GetComponent<PlayerHealth>();
             PlayerHealth.instance.TakeDamage();
             PlayerHealth.instance.OnPlayerHealthDamage.Raise();
