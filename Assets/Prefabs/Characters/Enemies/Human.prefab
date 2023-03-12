@@ -107,6 +107,7 @@ MonoBehaviour:
   totalNum: 0
   healthBarImage: {fileID: 5000168447798086153}
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!65 &770518271572743734
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -120,6 +121,9 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.3434142, y: 1.8927144, z: 1}
   m_Center: {x: 0.03432876, y: 0.4463572, z: 0}
+=======
+
+>>>>>>> c164d3e6dd368504e9ec4a12f1cf7d51f868273a
 =======
 
 >>>>>>> c164d3e6dd368504e9ec4a12f1cf7d51f868273a

@@ -38,14 +38,20 @@ public class EnemyMovement : MonoBehaviour
         {
             collidedWithWall = true;
 <<<<<<< HEAD
+<<<<<<< HEAD
             collidedWithEnemy = true;
             
 =======
+=======
+>>>>>>> c164d3e6dd368504e9ec4a12f1cf7d51f868273a
             if(anim!=null)
             {
                  anim.SetBool("isAttacking",true);
             }
            
+<<<<<<< HEAD
+>>>>>>> c164d3e6dd368504e9ec4a12f1cf7d51f868273a
+=======
 >>>>>>> c164d3e6dd368504e9ec4a12f1cf7d51f868273a
             PlayerHealth playerHealth = collision.gameObject.GetComponent<PlayerHealth>();
             PlayerHealth.instance.TakeDamage();
