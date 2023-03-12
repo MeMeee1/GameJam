@@ -12,8 +12,11 @@ public class GunControl : MonoBehaviour
             RaycastHit hit;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out hit)) {
-                transform.LookAt(hit.point);
-                    FireBullet();
+                if(hit.collider.gameObject.CompareTag("Enemy"))
+                {
+                    transform.LookAt(hit.point);
+                   
+                    FireBullet();}
                 
             }
         }

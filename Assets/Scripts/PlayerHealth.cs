@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -8,16 +9,20 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] PlayerSO _player;
     private int currentHealth; // the current health of the player
     [SerializeField]GameEvent OnGameLost;
+    public GameEvent OnPlayerHealthDamage;
     public static PlayerHealth instance;
+
+    public Image healthBarImage;
 
     private void Awake()
     {
         if (instance == null)
         {   instance = this;}
-        maxHealth = _player._playerHealth;
+        
     }
     private void Start()
     {
+        maxHealth = _player._playerHealth;
         currentHealth = maxHealth;
     }
 
@@ -29,12 +34,16 @@ public class PlayerHealth : MonoBehaviour
         {
             Die();
         }
+        float fillAmount = (float)currentHealth / (float)maxHealth;
+
+        // update the fill amount of the image component
+        healthBarImage.fillAmount = fillAmount;
     }
 
     private void Die()
     {
         // handle player death here
-        Time. timeScale = 0;
+        Time.timeScale = 0;
         OnGameLost.Raise();
     }
 }

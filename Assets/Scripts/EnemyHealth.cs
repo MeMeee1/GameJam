@@ -1,34 +1,45 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EnemyHealth : MonoBehaviour
 {
-    public static int enemiesKilled = 0;
     [SerializeField] EnemySO enemyObj;
     [SerializeField] private int startingHealth; // the starting health of the enemy
     public int currentHealth; // the current health of the enemy
-  
+    public static EnemyHealth instance;
+    public int totalNum;
+    public Image healthBarImage; // reference to the image component
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+    }
+
     private void Start()
     {
         startingHealth = enemyObj._enemyHealth;
         currentHealth = startingHealth;
-
-        Debug.Log("Starting health: " + startingHealth);
-        Debug.Log("Current health: " + currentHealth);
     }
 
     public void TakeDamage()
     {
         currentHealth -= 1;
 
-       
-        if(currentHealth == 0)
+        if (currentHealth == 0)
         {
             Destroy(gameObject);
-            enemiesKilled++;
-            Debug.Log(enemiesKilled);
         }
+
+        // calculate the fill amount based on the current health
+        float fillAmount = (float)currentHealth / (float)startingHealth;
+
+        // update the fill amount of the image component
+        healthBarImage.fillAmount = fillAmount;
     }
 
     public int CurrentHealth
