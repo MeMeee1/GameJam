@@ -11,7 +11,7 @@ public class EnemyManager : MonoBehaviour
     [SerializeField] Wave[] wave_to_Spawn;
    
     [SerializeField] GameEvent OnWaveStarted;
-    public GameEvent OnEnemyHealthDamaged;
+    
     public GameEvent OnGameWon;
     public static int totalEnemiesSpawned = 0;
     public bool allenemdead = false;
