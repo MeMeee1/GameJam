@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: EnemyBlue
   m_EditorClassIdentifier: 
   enemyName: 
-  enemyHealth: 2
+  enemyHealth: 10
   enemyPrefab: {fileID: 7717650712331720923, guid: 0591590a9196ea04b994564cc208c758, type: 3}
   enemySpeed: 2
   enemyDamage: 1

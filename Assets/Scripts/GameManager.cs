@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
     }
     void Start()
     {
-        PlayerPrefs.DeleteAll();
+       
 
         if (PlayerPrefs.GetInt("FirstTime") == 0)
         {
