@@ -1660,7 +1660,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5587873938715010839}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.7091288, y: 0, z: 1.7460104}
+  m_LocalPosition: {x: -0.7091288, y: -1, z: 1.7460104}
   m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1736,6 +1736,7 @@ MonoBehaviour:
   enemyObj: {fileID: 11400000, guid: 342310616e6d17044a126fbeef2f0a96, type: 2}
   startingHealth: 0
   currentHealth: 0
+
   totalNum: 0
   healthBarImage: {fileID: 9198185820827594570}
   particleSystem: {fileID: 8090404794233199900}
@@ -1901,6 +1902,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+
 --- !u!1001 &4268964687259622912
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1968,3 +1970,4 @@ ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 5438251067800863516, guid: 26a0bcb3610b08547ab74264587d5569, type: 3}
   m_PrefabInstance: {fileID: 4268964687259622912}
   m_PrefabAsset: {fileID: 0}
+

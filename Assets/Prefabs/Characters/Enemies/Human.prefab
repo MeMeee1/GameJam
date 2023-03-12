@@ -104,9 +104,12 @@ MonoBehaviour:
   enemyObj: {fileID: 11400000, guid: f15c3827dc1c18947a2768c2dae230d6, type: 2}
   startingHealth: 0
   currentHealth: 0
+
   totalNum: 0
   healthBarImage: {fileID: 5000168447798086153}
+
   particleSystem: {fileID: 4579925379576333325}
+
 --- !u!65 &770518271572743734
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -120,6 +123,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.3434142, y: 1.8927144, z: 1}
   m_Center: {x: 0.03432876, y: 0.4463572, z: 0}
+
 --- !u!1 &4897723674629867931
 GameObject:
   m_ObjectHideFlags: 0
