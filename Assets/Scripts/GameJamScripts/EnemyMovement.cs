@@ -6,6 +6,7 @@ public class EnemyMovement : MonoBehaviour
 {
     public EnemySO enemySO;
     
+    
     Rigidbody rb;
     private bool collidedWithWall = false;
     private bool collidedWithEnemy = false;
@@ -20,7 +21,7 @@ public class EnemyMovement : MonoBehaviour
            
     }
 
-    void Update()
+    void FixedUpdate()
     {
         if (!collidedWithWall)
         {
@@ -40,7 +41,9 @@ public class EnemyMovement : MonoBehaviour
            
             PlayerHealth playerHealth = collision.gameObject.GetComponent<PlayerHealth>();
             PlayerHealth.instance.TakeDamage();
+            PlayerHealth.instance.OnPlayerHealthDamage.Raise();
         }
+
     }
     
 }

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: PlayerSO
   m_EditorClassIdentifier: 
   playerName: 
-  playerHealth: 10
+  playerHealth: 2
   playerPrefab: {fileID: 276489403299005554, guid: e00742a96f7e22d4194d199441064b75, type: 3}
   playerSpeed: 0
   playerDamage: 1
