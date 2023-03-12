@@ -17,7 +17,7 @@ public class Ammo : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider collision)
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
@@ -26,9 +26,9 @@ public class Ammo : MonoBehaviour
             enemyHealth.TakeDamage(); 
             EnemyManager.instance.OnEnemyHealthDamaged.Raise();
             // reduce the enemy's health by a certain amount
-    
+            Destroy(gameObject);
         }
-        Destroy(gameObject);
+        
 
     }
 }

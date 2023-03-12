@@ -438,7 +438,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemySO: {fileID: 11400000, guid: c2a5e585b4456814fb6b985b5dfbc9a9, type: 2}
-  OnPlayerHealthDamage: {fileID: 0}
 --- !u!65 &4344770499245433521
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -447,7 +446,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7717650712331720923}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1.9107852, y: 1.125915, z: 2.86329}

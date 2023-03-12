@@ -19,17 +19,21 @@ public class EnemyMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (!collidedWithWall && GameManager.instance.StartGame == true)
+        if (GameManager.instance.StartGame == true)
         {
-            transform.Translate(Vector3.forward * enemySO._enemySpeed * Time.deltaTime);
+            if(!collidedWithWall || !collidedWithWall)
+            {
+                transform.Translate(Vector3.forward * enemySO._enemySpeed * Time.deltaTime);
+            }
         }
     }
 
     private void OnTriggerEnter(Collider collision)
     {
-        if (collision.gameObject.CompareTag("wall"))
+        if (collision.gameObject.CompareTag("wall") || collision.gameObject.CompareTag("Enemy"))
         {
             collidedWithWall = true;
+            collidedWithEnemy = true;
             
             PlayerHealth playerHealth = collision.gameObject.GetComponent<PlayerHealth>();
             PlayerHealth.instance.TakeDamage();
