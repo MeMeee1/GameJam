@@ -7838,7 +7838,7 @@ MonoBehaviour:
     hasStarted: 0
   - enemytoSpawn:
     - {fileID: 11400000, guid: f15c3827dc1c18947a2768c2dae230d6, type: 2}
-    timer: 8
+    timer: 10
     spawnPoints:
     - {fileID: 1246598923}
     - {fileID: 775346807}
@@ -7850,7 +7850,7 @@ MonoBehaviour:
   - enemytoSpawn:
     - {fileID: 11400000, guid: d6d517df368840649802d0b9d2794695, type: 2}
     - {fileID: 11400000, guid: 1c0bba8ee25c5e04a8f61e7430f9f5f2, type: 2}
-    timer: 15
+    timer: 18
     spawnPoints:
     - {fileID: 1394065151}
     - {fileID: 775346807}
@@ -7861,7 +7861,7 @@ MonoBehaviour:
   - enemytoSpawn:
     - {fileID: 11400000, guid: c2a5e585b4456814fb6b985b5dfbc9a9, type: 2}
     - {fileID: 11400000, guid: 58600b392028c4444b903ec697dc7f91, type: 2}
-    timer: 22
+    timer: 25
     spawnPoints:
     - {fileID: 611158219}
     - {fileID: 164932920}
@@ -7874,7 +7874,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 58600b392028c4444b903ec697dc7f91, type: 2}
     - {fileID: 11400000, guid: 1c0bba8ee25c5e04a8f61e7430f9f5f2, type: 2}
     - {fileID: 11400000, guid: d6d517df368840649802d0b9d2794695, type: 2}
-    timer: 30
+    timer: 35
     spawnPoints:
     - {fileID: 1406220606}
     - {fileID: 2039489095}
