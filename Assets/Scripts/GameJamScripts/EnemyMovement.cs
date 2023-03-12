@@ -19,7 +19,7 @@ public class EnemyMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (!collidedWithWall)
+        if (!collidedWithWall && GameManager.instance.StartGame == true)
         {
             transform.Translate(Vector3.forward * enemySO._enemySpeed * Time.deltaTime);
         }
