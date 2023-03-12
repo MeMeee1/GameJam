@@ -566,8 +566,10 @@ MonoBehaviour:
   enemyObj: {fileID: 11400000, guid: d6d517df368840649802d0b9d2794695, type: 2}
   startingHealth: 1
   currentHealth: 0
-  enemyDeathEvent: {fileID: 11400000, guid: 54bf8ab87f55a11458996f81f924fc9b, type: 2}
-  explosionEffect: {fileID: 1892078723244562, guid: 46876a2780737ec45a19d62f88e5ce56, type: 3}
+
+  totalNum: 0
+  healthBarImage: {fileID: 8320102262058283951}
+
 --- !u!1 &8549622718210498941
 GameObject:
   m_ObjectHideFlags: 0
@@ -753,3 +755,14 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8319944310975440692, guid: b0ca5ee10582cde4d9f3b2f36fed3d04, type: 3}
   m_PrefabInstance: {fileID: 219466448705605445}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8320102262058283951 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8105709114725678314, guid: b0ca5ee10582cde4d9f3b2f36fed3d04, type: 3}
+  m_PrefabInstance: {fileID: 219466448705605445}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
