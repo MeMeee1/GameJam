@@ -37,34 +37,16 @@ public class EnemyMovement : MonoBehaviour
         if (collision.gameObject.CompareTag("wall") || collision.gameObject.CompareTag("Enemy"))
         {
             collidedWithWall = true;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
+
             collidedWithEnemy = true;
             
-=======
-=======
->>>>>>> c164d3e6dd368504e9ec4a12f1cf7d51f868273a
-=======
->>>>>>> c164d3e6dd368504e9ec4a12f1cf7d51f868273a
-=======
->>>>>>> c164d3e6dd368504e9ec4a12f1cf7d51f868273a
+
             if(anim!=null)
             {
                  anim.SetBool("isAttacking",true);
             }
            
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> c164d3e6dd368504e9ec4a12f1cf7d51f868273a
-=======
->>>>>>> c164d3e6dd368504e9ec4a12f1cf7d51f868273a
-=======
->>>>>>> c164d3e6dd368504e9ec4a12f1cf7d51f868273a
-=======
->>>>>>> c164d3e6dd368504e9ec4a12f1cf7d51f868273a
+
             PlayerHealth playerHealth = collision.gameObject.GetComponent<PlayerHealth>();
             PlayerHealth.instance.TakeDamage();
             PlayerHealth.instance.OnPlayerHealthDamage.Raise();
