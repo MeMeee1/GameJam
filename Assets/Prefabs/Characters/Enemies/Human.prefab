@@ -117,8 +117,10 @@ MonoBehaviour:
   enemyObj: {fileID: 11400000, guid: f15c3827dc1c18947a2768c2dae230d6, type: 2}
   startingHealth: 0
   currentHealth: 0
+
   totalNum: 0
   healthBarImage: {fileID: 5000168447798086153}
+
 --- !u!1 &4897723674629867931
 GameObject:
   m_ObjectHideFlags: 0
