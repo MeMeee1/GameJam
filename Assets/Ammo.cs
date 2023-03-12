@@ -23,8 +23,9 @@ public class Ammo : MonoBehaviour
         {
             
             EnemyHealth enemyHealth = collision.gameObject.GetComponent<EnemyHealth>();
+            EnemyHealth.instance.particleSystem.Play();
             enemyHealth.TakeDamage(); 
-            EnemyManager.instance.OnEnemyHealthDamaged.Raise();
+            
             // reduce the enemy's health by a certain amount
             Destroy(gameObject);
         }

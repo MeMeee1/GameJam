@@ -12,6 +12,7 @@ public class EnemyHealth : MonoBehaviour
     public static EnemyHealth instance;
     public int totalNum;
     public Image healthBarImage; // reference to the image component
+    public ParticleSystem particleSystem;
 
     private void Awake()
     {
@@ -31,6 +32,7 @@ public class EnemyHealth : MonoBehaviour
     public void TakeDamage()
     {
         currentHealth -= 1;
+        
 
         if (currentHealth == 0)
         {
